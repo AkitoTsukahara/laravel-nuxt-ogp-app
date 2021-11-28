@@ -1,35 +1,37 @@
 .idea
 .idea/php.xml
-/docker/db/*
-/server/node_modules/*
-/server/vendor/*
-/server/storage/*
+
+docker/db/*
+
+/backend/node_modules/*
+/backend/vendor/*
+/backend/storage/*
 
 
-/server/node_modules
-/server/public/css
-/server/public/hot
-/server/public/js
-/server/public/storage
-/server/public/assets
-/server/storage/*.key
-/server/vendor
-/server/.idea
-/server/.vagrant
-/server/Homestead.json
-/server/Homestead.yaml
-/server/npm-debug.log
-/server/yarn-error.log
-/server/.env
-/server/env/.env.develop
-/server/env/.env.production
-/server/.DS_Store
-/server/_ide_helper.php
-/server/.docker-sync/
-/server/.elasticbeanstalk/
+/backend/node_modules
+/backend/public/css
+/backend/public/hot
+/backend/public/js
+/backend/public/storage
+/backend/public/assets
+/backend/storage/*.key
+/backend/vendor
+/backend/.idea
+/backend/.vagrant
+/backend/Homestead.json
+/backend/Homestead.yaml
+/backend/npm-debug.log
+/backend/yarn-error.log
+/backend/.env
+/backend/env/.env.develop
+/backend/env/.env.production
+/backend/.DS_Store
+/backend/_ide_helper.php
+/backend/.docker-sync/
+/backend/.elasticbeanstalk/
 
-/server/.tags
-/server/.tags1
+/backend/.tags
+/backend/.tags1
 
 # swagger
 /server/storage/api-docs/api-docs.json
