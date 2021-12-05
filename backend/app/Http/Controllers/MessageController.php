@@ -25,7 +25,7 @@ class MessageController extends Controller
         $id = DB::transaction(function () use ($decodedImage, $content) {
             $id = Str::uuid();
             $file = $id->toString() . '.jpg';
-            Message::created([
+            Message::create([
                 'id' => $id,
                 'content' => $content,
                 'file_path' => $file
@@ -42,5 +42,14 @@ class MessageController extends Controller
 
 
         return response()->json($id);
+    }
+
+    public function show($id)
+    {
+        $message = Message::find($id);
+        return response()->json([
+            'message' => $message->conetnt,
+            'url' => config('app.image_url') . '/' . $message->file_path
+        ]);
     }
 }
