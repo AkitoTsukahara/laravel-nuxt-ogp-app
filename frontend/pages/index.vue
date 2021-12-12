@@ -31,7 +31,9 @@
           </div>
           <div class="field">
             <div class="control">
-              //OGPボタンを配置
+              <client-only placeholder="Loading ...">
+                <GenerateOGPButton @click="handleGenerateOGP"/>
+              </client-only>
             </div>
           </div>
         </from>
@@ -41,7 +43,10 @@
 </template>
 
 <script>
+import GenerateOGPButton from '../components/GenerateOGPButton';
+
 export default {
+  components: { GenerateOGPButton },
   data() {
     return {
       message: '',
@@ -49,7 +54,10 @@ export default {
   },
   methods: {
     handleGenerateOGP(e) {
-
+      this.$store.dispatch('setMessage', {
+        message: this.message,
+        image: e,
+      });
     },
   },
 };

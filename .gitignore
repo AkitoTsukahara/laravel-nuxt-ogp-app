@@ -35,3 +35,5 @@ docker/db/*
 
 # swagger
 /server/storage/api-docs/api-docs.json
+
+ngrok
